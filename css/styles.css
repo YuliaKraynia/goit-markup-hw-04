@@ -389,17 +389,10 @@ padding-bottom: 94px;
     fill: #AFB1B8;
 }
 
-/*.client-linc-icon :hover,
-.client-linc-icon :focus {
-    fill: var(--blue-color)
-    /*border-color: var(--blue-color);
-}
-    */ 
-
 .client-linc:hover,
 .client-linc:focus {
-    fill:var(--blue-color)
-    /*border-color:var(--blue-color);*/
+    fill: var(--blue-color);
+    border-color: var(--blue-color);
 }
 
 /*===========CLIENT====================*/
@@ -485,6 +478,7 @@ padding-bottom: 94px;
 
 /*================FOOTER========*/
 .footer {
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-background-dark);
@@ -511,14 +505,10 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.link-footer {
-    text-decoration: none;
-    margin-top: 20px;
-}
+
 .adress-footer {
     display: flex;
     flex-direction:column;
-
 }
 
 .adress-footer-map {
@@ -532,11 +522,7 @@ padding-bottom: 94px;
 }
 
 .title-footer {
-    /*width: 144px;
-    height: 16px;
-    left: 516px;
-    top: 2751px;*/
-    
+    display: block;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -550,9 +536,16 @@ padding-bottom: 94px;
 .link-footer {
     display: flex;
     gap: 10px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
-.lisk-footer {
+.lisk-footer:hover,
+.lisk-footer:focus {
+    background:var(--blue-color);
+}
+
+.list-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -562,27 +555,23 @@ padding-bottom: 94px;
     background: rgba(255, 255, 255, 0.1);
 }
 
-.social-link-footer {
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-box {
+    display: flex;
     
 }
 
-.lisk-footer:hover,
-.lisk-footer:focus {
-    background:var(--blue-color);
-}
 
-.social-list-icon{
+.icon-link-footer {
     fill: #FFFFFF;
 }
 
-.footer-logo {
 
-}
 
-.footer-icon{
-    display: flex;
-    flex-direction: column;
-}
 
 
 
