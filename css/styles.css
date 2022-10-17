@@ -47,7 +47,7 @@ margin: 0;
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -134,7 +134,22 @@ align-items: center;
 .contact-email-icon {
     fill: currentColor;
     margin-right: 10px;
-      
+}
+
+.portfolio-email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-text);
+
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .contact-phone-number {
@@ -158,7 +173,19 @@ align-items: center;
 .contact-phone-icon {
     fill: currentColor;
     margin-right: 10px;
+}
 
+.portfolio-number {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+       
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--accent-color-text);
 }
 
 /*================/HEADER===============*/
@@ -467,10 +494,20 @@ padding-bottom: 94px;
 .gallery-work {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 28px;
 }
 .gallery-foto {
     flex-basis: calc ((100%-240px)/9);
+}
+
+.gallery-work-link {
+    display: block;
+}
+
+.gallery-work-link:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -478,7 +515,6 @@ padding-bottom: 94px;
 
 /*================FOOTER========*/
 .footer {
-    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-background-dark);
@@ -512,7 +548,7 @@ padding-bottom: 94px;
 }
 
 .adress-footer-map {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .email-footer {
     margin-top: 9px;
@@ -536,7 +572,6 @@ padding-bottom: 94px;
 .link-footer {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
     text-decoration: none;
 }
 
@@ -545,26 +580,35 @@ padding-bottom: 94px;
     background:var(--blue-color);
 }
 
-.list-footer {
+.social-link-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--blue-color);
+}
+
 
 .footer-icon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-box {
     display: flex;
+    align-items: baseline;
+    gap: 70px;
     
 }
-
 
 .icon-link-footer {
     fill: #FFFFFF;
